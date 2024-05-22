@@ -991,9 +991,9 @@ impl Exec {
             _ => return Err(ExecError::BadOpcode),
         }
 
-        if self.stack.len() + self.altstack.len() > MAX_STACK_SIZE {
-            return Err(ExecError::StackSize);
-        }
+        // if self.stack.len() + self.altstack.len() > MAX_STACK_SIZE {
+        //     return Err(ExecError::StackSize);
+        // }
 
         Ok(())
     }
